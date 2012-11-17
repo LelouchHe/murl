@@ -161,6 +161,7 @@ static int clean(struct murl_t *murl, int should_cleanup)
             conns[i].url = NULL;
             conns[i].status = MURLS_NONEXIST;
             conns[i].error[0] = '\0';
+            conns[i].len = 0;
 
             murl->num--;
         }
